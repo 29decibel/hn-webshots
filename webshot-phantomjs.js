@@ -1,5 +1,5 @@
 var page = require('webpage').create();
-page.viewportSize = { width: 1920, height: 1080 };
+page.viewportSize = { width: 1024, height: 768 };
 
 var system = require('system');
 var args = system.args;
