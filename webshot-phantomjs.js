@@ -7,6 +7,13 @@ var args = system.args;
 var url = args[1];
 var outputFileName = args[2];
 
+/*
+ *page.onError = function(msg, trace) {
+ *  console.log(msg);
+ *  console.log(trace);
+ *});
+ */
+
 page.open(url, function() {
   page.render(outputFileName,  {format: 'png', quality: '100'});
   phantom.exit();
